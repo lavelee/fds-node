@@ -9,11 +9,12 @@
 
 
 ### SungHyun's todo
-- 
+-
 
 
 ### Doyoung's todo
 - To study Angular
+- Make desktop design
 
 ## Done
 - To setup folder structure
