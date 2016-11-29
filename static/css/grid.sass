@@ -1,0 +1,92 @@
+@charset "utf-8"
+
+$screen_width: 600px
+$n_col: 4
+$pixel_residue: $screen_width - floor($screen_width/$n_col) *$n_col
+$inner_screen_width: $screen_width -$pixel_residue
+$garo_unit: $inner_screen_width /$n_col
+$sero_unit: 50px
+
+.wrapper
+  width: $screen_width
+  background: silver
+  margin-left: auto
+  margin-right: auto
+  padding:
+    left: $pixel_residue/2
+    right: $pixel_residue/2
+  box-sizing: border-box
+  &::after
+    content: ""
+    display: block
+    clear: both
+
+.boxfloat
+  float: left
+
+@mixin boxSize($n_garo,$n_sero,$mgt:0,$mgr:0,$mgb:0,$mgl:0)
+  @extend .boxfloat
+  height: $n_sero*$sero_unit -$mgt -$mgb
+  width: $n_garo*$garo_unit - $mgr - $mgl
+  background-color: rgb(random(255)-1,random(255)-1,random(255)-1)
+  margin:
+    top: $mgt
+    right: $mgr
+    bottom: $mgb
+    left: $mgl
+
+@mixin pickMove($n_garo,$n_sero)
+  position: relative
+  left: $n_garo*$garo_unit
+  top: $n_sero*$sero_unit
+
+@mixin boxMarginLeft($n_garo)
+  margin:
+    left: $n_garo*$garo_unit
+
+@mixin boxMarginRight($n_garo)
+  margin:
+    right: $n_garo*$garo_unit
+
+.row1
+  +boxSize(4,4)
+  input
+    display: block
+    width: 300px
+    height: 50px
+.row2-1
+  +boxSize(2,1)
+.row2-2
+  +boxSize(2,1)
+.row3
+  +boxSize(4,1)
+// .row1-1
+//   @include boxSize(2,1)
+//
+// .row1-2
+//   @include boxSize(2,1)
+//
+// .row2
+//   @include boxSize(4,4)
+//
+// .row3-1, .row3-2, .row3-3, .row3-4
+//   @include boxSize(1,5)
+//
+// .row4-1, .row4-2
+//   @include boxSize(2,10)
+//
+// .row4-2-1
+//   @include boxSize(1,8)
+// .row4-2-2, .row4-2-3
+//   @include boxSize(1,4)
+//
+// .row5-1
+//   @include boxSize(4,4)
+// .row5-1,.row5-2,.row5-3
+//   @include boxSize(1.2,4)
+//
+// .row6-1,.row6-2,.row6-3,.row6-4
+//   @include boxSize(1,5)
+//
+// .row7
+//   @include boxSize(4,2)
