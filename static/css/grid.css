@@ -1,0 +1,57 @@
+.wrapper {
+  width: 600px;
+  background: silver;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  box-sizing: border-box; }
+  .wrapper::after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.boxfloat, .row1, .row2-1, .row2-2, .row3 {
+  float: left; }
+
+.row1 {
+  height: 200px;
+  width: 600px;
+  background-color: #787512;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0; }
+  .row1 input {
+    display: block;
+    width: 300px;
+    height: 50px; }
+
+.row2-1 {
+  height: 50px;
+  width: 300px;
+  background-color: #dcccc2;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0; }
+
+.row2-2 {
+  height: 50px;
+  width: 300px;
+  background-color: #30b428;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0; }
+
+.row3 {
+  height: 50px;
+  width: 600px;
+  background-color: #db4469;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0; }
+
+/*# sourceMappingURL=grid.css.map */
