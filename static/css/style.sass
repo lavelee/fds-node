@@ -1,3 +1,9 @@
+body
+  display: flex
+  flex-flow: column
+  height: 90vh
+  padding-top: 10vh
+
 a
   text-decoration: none
 
@@ -5,11 +11,6 @@ a
   position: absolute
   right: 30px
   top: 30px
-
-.input-group
-  margin:
-    top: 30px
-    bottom: 30px
 
 .wrapper
   margin:
@@ -19,7 +20,13 @@ a
     right: auto
   width: 70%
   height: 70%
-  background: silver
+  // background: silver
+
+.input-group
+  margin:
+    top: 30px
+    bottom: 30px
+
 .row1
   input
     width: 100%
@@ -31,7 +38,32 @@ a
       top: 10px
     display: flex
     flex-direction: column
+    padding-left: 10px
+    &::-webkit-input-placeholder
+      padding-left: 10px
+
 .row2
   display: flex
   flex-direction: row
+  justify-content: space-around
 .row3
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  & input::-webkit-input-placeholder
+    padding-left: 10px
+  input
+    padding-left: 10px
+
+.row4
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  input
+    padding-left: 10px
+    background-color: blue
+    border: 0px solid black
+    border-radius: 10px
+    height: 40px
+    width: 100px
+    color: white

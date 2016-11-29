@@ -29,17 +29,25 @@
     <fieldset>
       <legend class="readable-hidden">선택입력사항</legend>
       <div class="input-group row2">
-        <label for="male">남자</label>
-        <input type="radio" name="gender" id="male">
-        <label for="female">여자</label>
-        <input type="radio" name="gender" id="female">
+        <div>
+          <label for="male">남자</label>
+          <input type="radio" name="gender" id="male">
+        </div>
+        <div>
+          <label for="female">여자</label>
+          <input type="radio" name="gender" id="female">
+        </div>
       </div>
       <div class="input-group row3">
-        <label for="female">출생연도</label>
-        <input type="number" min="1950" max="2099" step="1" value="2016" />
+        <div>
+          <label for="female">출생연도</label>
+          <input type="number" min="1950" max="2099" step="1" value="2016" />
+        </div>
       </div>
     </fieldset>
-    <input type="submit" class="input-group row4" value="가입신청">
+    <div class="row4">
+      <input type="submit" value="가입신청">
+    </div>
   </form>
   <a class="close" href=""><img src="" alt="닫기버튼"></a>
 </section>
