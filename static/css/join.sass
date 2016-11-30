@@ -1,8 +1,13 @@
-body
+=flexCenter
   display: flex
-  flex-flow: column
-  height: 90vh
-  padding-top: 10vh
+  flex-direction: row
+  justify-content: space-around
+
+// body
+//   display: flex
+//   flex-flow: column
+//   height: 90vh
+//   padding-top: 10vh
 
 a
   text-decoration: none
@@ -18,9 +23,12 @@ a
     bottom: auto
     left: auto
     right: auto
+  padding:
+    top: 150px
   width: 70%
   height: 70%
-  // background: silver
+  background-color: silver
+  min-width: 200px
 
 .input-group
   margin:
@@ -38,27 +46,21 @@ a
       top: 10px
     display: flex
     flex-direction: column
-    padding-left: 10px
-    &::-webkit-input-placeholder
-      padding-left: 10px
+    padding-left: 20px
+    // &::-webkit-input-placeholder
+    //   padding-left: 10px
 
 .row2
-  display: flex
-  flex-direction: row
-  justify-content: space-around
+  +flexCenter
+
 .row3
-  display: flex
-  flex-direction: row
-  justify-content: space-around
-  & input::-webkit-input-placeholder
-    padding-left: 10px
+  +flexCenter
   input
     padding-left: 10px
+    width: 50px
 
 .row4
-  display: flex
-  flex-direction: row
-  justify-content: space-around
+  +flexCenter
   input
     padding-left: 10px
     background-color: blue
@@ -67,4 +69,3 @@ a
     height: 40px
     width: 100px
     color: white
-// flex 가 너무 많아서 묶을까 고민중
