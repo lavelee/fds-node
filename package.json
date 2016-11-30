@@ -1,8 +1,8 @@
 {
   "name": "team6",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "fastcampus team6 project",
-  "main": "./src/nodejs/app.js",
+  "main": "./nodejs/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./src/nodejs/app.js"
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/lavelee/team6-proj.git"
   },
-  "author": "lavelee, doyoung",
+  "author": "lavelee",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lavelee/team6-proj/issues"
